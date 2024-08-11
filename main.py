@@ -16,4 +16,4 @@ if __name__ == '__main__':
             content = get_plain(link)
             results = get_images(content)
             save_images(results, input("Enter prefix for images:"))
-            print("Scraping complete. Links saved to temp_links.csv")
+            print("Scraping complete. Images saved to /images directory")
