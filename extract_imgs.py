@@ -1,4 +1,4 @@
-import hashlib, io, requests, pandas as pd
+import io, requests
 from pathlib import Path
 from PIL import Image
 
