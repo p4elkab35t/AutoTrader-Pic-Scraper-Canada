@@ -2,7 +2,8 @@ import requests
 import re
 
 def get_plain(URL="https://www.google.com"):
-    response = requests.get(URL)
+    headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0 Safari/537.36'}
+    response = requests.get(URL, headers=headers)
     html_content = response.text
     return html_content
 
